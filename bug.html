@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect way to add a class using innerHTML
+    document.getElementById("myDiv").innerHTML = "<div class='myClass'></div>";
+    // This does not actually add the class to the new div element
+    // innerHTML completely overwrites the content
+  </script>
+</body>
+</html>
