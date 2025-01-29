@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    const newDiv = document.createElement('div');
+    newDiv.className = 'myClass'; // Correct way to add a class
+    document.getElementById("myDiv").appendChild(newDiv);
+  </script>
+</body>
+</html>
